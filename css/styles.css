@@ -61,6 +61,7 @@ body{
     font-size: 15px;
     line-height: 22px;
     font-weight: normal;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1260px;
