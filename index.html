@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=0>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/carousel.css">
@@ -13,7 +13,7 @@
     <header class="header-container container">
         <div class="top-header">
             <div class="top-header-contact">
-                <span class="menu-text top-header-text">Chat with us</span>
+                <span class="menu-text top-header-text top-contact">Chat with us</span>
                 <span class="top-header-text">+420 336 775 664</span>
                 <span class="top-header-text">info@freshnesecom.com</span>
             </div>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="main-header">
-            <img class="logo-img" src="img/site-header-logo.svg" alt="header logo"  width="177" height="50">
+            <a class="logo-link"><img class="logo-img" src="img/site-header-logo.svg" alt="header logo"  width="177" height="50"></a>
             <form class="header-form" action="POST" >
                 <select name="category" id="category" class="category-select">
                     <option value="all">All Categories</option>
@@ -45,7 +45,7 @@
         <ul class="header-navbar">
             <li class="nav-items"><a href="" class="nav-link links">Bakery</a>
                 <ul class="dropdown">
-                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Dropdown</li>
                     <li class="dropdown-items">Keks</li>
                     <li class="dropdown-items">Pirojniy</li>
                     <li class="dropdown-items">Kulcha</li>
@@ -137,55 +137,57 @@
     <section class="bestseller">
         <div class="bestseller-container container">
             <div class="bestseller-menu-list">
-                <p class="menu-title">Best selling products</p>
-                <ul class="category-menu-list">
+                <p class="menu-title best-menu-title">Best selling products</p>
+                <ul class="category-menu-list bestsec">
                     <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Kitchen</a></li>
                     <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Meat and fish</a></li>
                     <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Special nutrition</a></li>
                     <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Pharmacy</a></li>
                     <li class="cat-menu-items"><a href="#" class="cat-menu-text links">Baby</a></li>
                 </ul>
-                <button class="more-btn btn">More products</button>
+                <button class="more-btn btn bestsec">More products</button>
             </div>
-            <div class="bestseller-card">
-                <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
-                <p class="bestseller-title">Product title</p>
-                <p class="bestseller-desc">Space for a small product description </p>
-                <div class="product-info">
-                    <div class="product-cost-info">
-                        <p class="product-cost">1.48 USD</span>
-                        <p class="discount-cost"></p>
+            <div class="bestseller-card-list">
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost"></p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
                     </div>
-                    <button class="buy-btn btn">Buy now</button>
                 </div>
-            </div>
-            <div class="bestseller-card">
-                <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
-                <p class="bestseller-title">Product title</p>
-                <p class="bestseller-desc">Space for a small product description </p>
-                <div class="product-info">
-                    <div class="product-cost-info">
-                        <p class="product-cost">1.48 USD</span>
-                        <p class="discount-cost">48.56</p>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
                     </div>
-                    <button class="buy-btn btn">Buy now</button>
                 </div>
-            </div>
-            <div class="bestseller-card">
-                <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
-                <p class="bestseller-title">Product title</p>
-                <p class="bestseller-desc">Space for a small product description </p>
-                <div class="product-info">
-                    <div class="product-cost-info">
-                        <p class="product-cost">1.48 USD</span>
-                        <p class="discount-cost">48.56</p>
+                <div class="bestseller-card">
+                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="237" height="180">
+                    <p class="bestseller-title">Product title</p>
+                    <p class="bestseller-desc">Space for a small product description </p>
+                    <div class="product-info">
+                        <div class="product-cost-info">
+                            <p class="product-cost">1.48 USD</span>
+                            <p class="discount-cost">48.56</p>
+                        </div>
+                        <button class="buy-btn btn">Buy now</button>
                     </div>
-                    <button class="buy-btn btn">Buy now</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="farmers">
+    <!-- <section class="farmers">
         <div class="bestseller-container container">
             <div class="bestseller-menu-list">
                 <p class="menu-title">Best from Farmers</p>
@@ -382,8 +384,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="site-footer">
+    </section> -->
+    <!-- <footer class="site-footer">
         <div class="footer-container container">
             <div class="footer-menu">
                 <h3 class="menu-title">Get in touch</h3>
@@ -448,7 +450,7 @@
             </ul>
             <p class="copyright">Copyright © 2020 petrbilek.com</p>
         </section>
-    </footer>
+    </footer> -->
 
 
     <script src="js/carousel.js"></script>
