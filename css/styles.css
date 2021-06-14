@@ -679,12 +679,32 @@ body{
         margin-bottom: 10px;
     }
     .full-blog{
+        margin: 0;
         margin-bottom: 10px;
     }
 }
 @media (max-width: 767px){
     .feature-blog{
+        margin: 0;
         margin-left: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        position: relative;
+    }
+    .full-blog{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .blog-bg-img{
+        width: 100%;
+    }
+    .blog-title{
+        top: 150px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .single-post:not(:last-child) {
+        margin-bottom: 20px;
     }
     
 }
