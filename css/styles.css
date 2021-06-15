@@ -1372,7 +1372,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
         margin-bottom: 10px;
     }
     .grid-view-card{
-        max-width: 140px;
+        max-width: 180px;
         padding: 10px;
     }
     .product-info{
