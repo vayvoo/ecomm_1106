@@ -411,7 +411,6 @@ body{
 }
 
 .bestseller-card{
-    max-width: 269px;
     padding: 16px;
     border: 1px solid #D1D1D1;
     box-sizing: border-box;
@@ -1367,9 +1366,21 @@ section.range-slider input[type=range]::-moz-focus-outer {
 }
 @media (max-width: 767px){
     .product-list-row{
+        flex-wrap: nowrap   ;
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;
+    }
+    .grid-view-card{
+        max-width: 140px;
+        padding: 10px;
+    }
+    .product-info{
+        flex-direction: column;
+    }
+    .product-cost{
+        font-size: 18px;
+        line-height: 27px;
     }
     .grid-view-card:last-child{
         display: none;
