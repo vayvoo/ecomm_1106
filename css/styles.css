@@ -1349,3 +1349,27 @@ section.range-slider input[type=range]::-moz-focus-outer {
         margin-top: 10px;
     }
 }
+
+
+/* CATEGORY GRID VIEW PAGE */
+
+.product-list-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+@media (max-width: 992px){
+    .product-list-row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 767px){
+    .product-list-row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
