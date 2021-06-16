@@ -1685,4 +1685,10 @@ td{
     .product-page-info{
         width: 90%;
     }
+    .tabs{
+        margin-right: -60px;
+    }
+    th:not(:last-child){
+        width: 40%;
+    }
 }
