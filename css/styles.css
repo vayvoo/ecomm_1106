@@ -1407,6 +1407,7 @@ section.range-slider input[type=range]::-moz-focus-outer {
 .product-images-list{
     display: flex;
     flex-direction: column;
+    width: 569px;
     margin-right: 32px;
 }
 .product-image{
@@ -1422,6 +1423,9 @@ section.range-slider input[type=range]::-moz-focus-outer {
     .product-image{
         width: 369px;
         height: 300px;
+    }
+    .product-images-list{
+        width: 369px;
     }
 }
 @media (max-width: 992px){
