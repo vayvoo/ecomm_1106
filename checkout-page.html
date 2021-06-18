@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>E-commerce project</title>
+</head>
+<body>
+    <header class="header-container container">
+        <div class="top-header">
+            <div class="top-header-contact">
+                <span class="menu-text top-header-text top-contact">Chat with us</span>
+                <span class="top-header-text">+420 336 775 664</span>
+                <span class="top-header-text">info@freshnesecom.com</span>
+            </div>
+            <div class="top-header-menu">
+                <ul class="top-header-items">
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">About Us</a></li>
+                    <li class="top-header-text"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header">
+            <a class="logo-link"><img class="logo-img" src="img/site-header-logo.svg" alt="header logo"  width="177" height="50"></a>
+            <form class="header-form" action="POST" >
+                <select name="category" id="category" class="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="tech">technology</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+                <input class="search" type="text" name="search" id="search" placeholder="Search Products, categories...">
+            </form>
+            <div class="header-cart">
+                <button class="account-btn btn"><img src="img/user-account.svg" alt="user icon" width="24" height="24"></button>
+                <button class="cart-btn btn"><img src="img/pocket.svg" alt="cart icon" width="24" height="24"></button>
+            </div>
+        </div>
+    </header>
+    <nav class="main-navbar container">
+        <ul class="header-navbar">
+            <li class="nav-items"><a href="" class="nav-link links">Bakery</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Dropdown</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Fruit and vegetables</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Meat and fish</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Drinks</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Kitchen</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Special nutrition</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Baby</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+            <li class="nav-items"><a href="" class="nav-link links">Pharmacy</a>
+                <ul class="dropdown">
+                    <li class="dropdown-items">Bread</li>
+                    <li class="dropdown-items">Keks</li>
+                    <li class="dropdown-items">Pirojniy</li>
+                    <li class="dropdown-items">Kulcha</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="site-main container">
+        <div class="breadcrumbs">
+            <p class="bread-text">Homepage / <span class="active">Checkout page/span></p>
+        </div>
+        <section class="billing-sidebar">
+            <div class="billing-info-section">
+                <form action="POST" class="checkout-form">
+                    <div class="billing-header">
+                        <h2 class="checkout-title">Billing info</h2>
+                        <div class="billing-step-text">
+                            <p class="checkout-mini-text">Please enter your billing info</p>
+                            <p class="checkout-mini-text">Step 1 of 5</p>
+                        </div>
+                    </div>
+                    <div class="billing-info" id="billing-info">
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="name">First name</label>
+                                <input class="input-class" type="text" name="name" id="name" placeholder="First name">
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="last-name">Last name</label>
+                                <input class="input-class" type="text" name="last-name" id="last-name" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="email">Email address</label>
+                                <input class="input-class" type="email" name="email" id="email" placeholder="Email address">
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="phone">Phone number</label>
+                                <input class="input-class" type="tel" name="phone" id="phone" placeholder="Phone number">
+                            </div>
+                        </div>
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="address">Address</label>
+                                <input class="input-class" type="text" name="address" id="address" placeholder="Address">
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="town">Town / City</label>
+                                <input class="input-class" type="text" name="town" id="town" placeholder="Town / Cityr">
+                            </div>
+                        </div>
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="state">State / Country</label>
+                                <select class="input-class select-class" name="state" id="state">
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Uzbekistan">Kyrgyzstan</option>
+                                    <option value="Uzbekistan">Kazakhstan</option>
+                                </select>
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="town">Zip / Postal code</label>
+                                <input class="input-class" type="text" name="town" id="town" placeholder="Zip / Postal code">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="another-address-check" type="checkbox" name="another-address" id="another-address">
+                    <label for="another-address">Ship to a different address</label>
+                    <div class="different-address-section">
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="name">First name</label>
+                                <input class="input-class" type="text" name="name" id="name" placeholder="First name">
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="last-name">Last name</label>
+                                <input class="input-class" type="text" name="last-name" id="last-name" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="email">Email address</label>
+                                <input class="input-class" type="email" name="email" id="email" placeholder="Email address">
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="phone">Phone number</label>
+                                <input class="input-class" type="tel" name="phone" id="phone" placeholder="Phone number">
+                            </div>
+                        </div>
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="address">Address</label>
+                                <input class="input-class" type="text" name="address" id="address" placeholder="Address">
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="town">Town / City</label>
+                                <input class="input-class" type="text" name="town" id="town" placeholder="Town / Cityr">
+                            </div>
+                        </div>
+                        <div class="billing-info-row">
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="state">State / Country</label>
+                                <select class="input-class select-class" name="state" id="state">
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Uzbekistan">Kyrgyzstan</option>
+                                    <option value="Uzbekistan">Kazakhstan</option>
+                                </select>
+                            </div>
+                            <div class="billing-info-item">
+                                <label class="checkout-item-title" for="town">Zip / Postal code</label>
+                                <input class="input-class" type="text" name="town" id="town" placeholder="Zip / Postal code">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <aside class="order-side">
+            
+        </aside>
+    </main>
+    <footer class="container">
+        <p class="copyright">Copyright © 2020 petrbilek.com</p>
+    </footer>
+</body>
+</html>

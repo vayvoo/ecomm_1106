@@ -76,14 +76,14 @@ body{
     text-decoration: none;
 }
 .visually-hidden{
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding; 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;  
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding; 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;  
 }
 /* HEADER */
 .header-container{
@@ -1695,4 +1695,72 @@ td{
     th:not(:last-child){
         width: 40%;
     }
+}
+
+/* CHECKOUT PAGE */
+
+.billing-sidebar {
+    width: 670px;
+}
+.billing-info-section {
+}
+.checkout-form {
+}
+.billing-header {
+    margin-bottom: 32px;
+}
+.checkout-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 4px;
+}
+.checkout-item-title{
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+.billing-step-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkout-mini-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray-color);
+}
+
+.input-class{
+    width: 319px;
+    padding: 11px 16px 12px 21px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #F9F9F9;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.select-class{
+    color: var(--black-color);
+}
+.billing-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.billing-info-item:not(:last-child) {
+    margin-right: 32px;
+}
+.different-address-section{
+    display: none;
+}
+.another-address-check:checked ~ .different-address-section{
+    display: block;
+}
+.another-address-check:checked ~ #billing-info{
+    display: none;
 }
