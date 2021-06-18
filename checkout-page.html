@@ -123,7 +123,7 @@
                             <p class="checkout-mini-text">Step 1 of 5</p>
                         </div>
                     </div>
-                    <div class="billing-info" id="billing-info">
+                    <div class="billing-info">
                         <div class="billing-info-row">
                             <div class="billing-info-item">
                                 <label class="checkout-item-title" for="name">First name</label>
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                     <input class="another-address-check" type="checkbox" name="another-address" id="another-address">
-                    <label for="another-address">Ship to a different address</label>
+                    <label class="different-address-check" for="another-address">Ship to a different address</label>
                     <div class="different-address-section">
                         <div class="billing-info-row">
                             <div class="billing-info-item">
@@ -214,6 +214,110 @@
                             <div class="billing-info-item">
                                 <label class="checkout-item-title" for="town">Zip / Postal code</label>
                                 <input class="input-class" type="text" name="town" id="town" placeholder="Zip / Postal code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billing-method-section">
+                        <div class="billing-header">
+                            <h2 class="checkout-title">Billing Method</h2>
+                            <div class="billing-step-text">
+                                <p class="checkout-mini-text">Please enter your billing method</p>
+                                <p class="checkout-mini-text">Step 2 of 5</p>
+                            </div>
+                        </div>
+                        <div class="billing-method">
+                            <div class="billing-method-item">
+                                <div class="radio-check">
+                                    <input type="radio" name="billing-method" id="fedex">
+                                    <label class="method-name" for="fedex">FedEx</label>
+                                </div>
+                                <div class="additional-price">
+                                    <span class="add-price">+32 USD</span>
+                                    <p class="add-text">Additional price</p>
+                                </div>
+                                <img src="img/fedex-icon.png" alt="fedex logo" class="billing-method-img" width="54" height="16">
+                            </div>
+                            <div class="billing-method-item">
+                                <div class="radio-check">
+                                    <input type="radio" name="billing-method" id="dhl">
+                                    <label class="method-name" for="dhl">DHL</label>
+                                </div>
+                                <div class="additional-price">
+                                    <span class="add-price">+32 USD</span>
+                                    <p class="add-text">Additional price</p>
+                                </div>
+                                <img src="img/dhl-icon.png" alt="dhl logo" class="billing-method-img" width="93" height="14">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-method-section">
+                        <div class="billing-header">
+                            <h2 class="checkout-title">Payment Method</h2>
+                            <div class="billing-step-text">
+                                <p class="checkout-mini-text">Please enter your payment method</p>
+                                <p class="checkout-mini-text">Step 3 of 5</p>
+                            </div>
+                        </div>
+                        <div class="payment-method">
+                            <div class="payment-method-item">
+                                <input type="radio" name="payment" id="credit-card">
+                                <label class="method-name credit-card-name" for="credit-card">Credit card</label>
+                                <img src="img/visa-icon.png" alt="" class="payment-method-img" width="94" height="20">
+                                <div class="card-info">
+                                    <div class="billing-info-item card-number-section">
+                                        <label class="checkout-item-title" for="card-number">Card number</label>
+                                        <input class="input-class card-number-input" type="number" name="card-number" id="card-number" placeholder="Card number">
+                                    </div>
+                                    <div class="card-number-info">
+                                        <div class="billing-info-item">
+                                            <label class="checkout-item-title" for="card-holder">Card holder</label>
+                                            <input class="input-class card-info-holder" type="text" name="card-holder" id="card-holder" placeholder="Card holder">
+                                        </div>
+                                        <div class="card-info-item">
+                                            <label class="checkout-item-title" for="exp-date">Expiration date</label>
+                                            <input class="input-class card-info-input" type="datetime" name="exp-date" id="exp-date" placeholder="DD/MM/YY">
+                                        </div>
+                                        <div class="billing-info-item">
+                                            <label class="checkout-item-title" for="card-cvc">CVC</label>
+                                            <input class="input-class card-info-input" type="datetime" name="card-cvc" id="card-cvc" placeholder="CVC">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-method-item">
+                                <input type="radio" name="payment" id="paypal-payment">
+                                <label class="method-name paypal-payment-name" for="paypal-payment">Paypal</label>
+                                <img src="img/paypal-icon.png" alt="" class="payment-method-img" width="78" height="18">
+                                <div class="paypal-info">
+                                    <div class="billing-info-item card-number-section">
+                                        <label class="checkout-item-title" for="card-number">Email</label>
+                                        <input class="input-class paypal-input" type="email" name="card-number" id="card-number" placeholder="Email">
+                                        <label class="checkout-item-title" for="card-cvc">Paypal Password</label>
+                                        <input class="input-class paypal-input" type="password" name="card-cvc" id="card-cvc" placeholder="Paypal Password">
+                                        <button class="paypal-login-btn">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-method-item">
+                                <input type="radio" name="payment" id="bitcoin-payment">
+                                <label class="method-name paypal-payment-name" for="bitcoin-payment">Bitcoin</label>
+                                <img src="img/bitcoin-icon.png" alt="" class="payment-method-img" width="75" height="16">
+                                <div class="bitcoin-info">
+                                    <div class="billing-info-item card-number-section">
+                                        <label class="checkout-item-title" for="card-number">Bitcoin number</label>
+                                        <input class="input-class paypal-input" type="number" name="card-number" id="card-number" placeholder="Bitocin number">
+                                        <button class="paypal-login-btn">Buy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-info-section">
+                        <div class="billing-header">
+                            <h2 class="checkout-title">Additional informations</h2>
+                            <div class="billing-step-text">
+                                <p class="checkout-mini-text">Need something else? We will make it for you!</p>
+                                <p class="checkout-mini-text">Step 4 of 5</p>
                             </div>
                         </div>
                     </div>

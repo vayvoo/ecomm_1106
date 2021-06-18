@@ -1731,13 +1731,15 @@ td{
     line-height: 16px;
     color: var(--gray-color);
 }
-
+.billing-info{
+    margin-bottom: 64px;
+}
 .input-class{
     width: 319px;
     padding: 11px 16px 12px 21px;
     font-size: 14px;
     line-height: 19px;
-    color: #F9F9F9;
+    color: var(--black-color);
     background: #F9F9F9;
     border: 1px solid #D1D1D1;
     box-sizing: border-box;
@@ -1758,9 +1760,156 @@ td{
 .different-address-section{
     display: none;
 }
+.different-address-check{
+    width: 243px;
+    padding: 9px 16px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 19px;
+}
+.another-address-check{
+    margin-bottom: 79px;
+}
 .another-address-check:checked ~ .different-address-section{
     display: block;
 }
-.another-address-check:checked ~ #billing-info{
+
+/* BILLING_METHOD */
+
+.billing-method-section{
+    margin-bottom: 64px;
+}
+.billing-method-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    position: relative;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+.radio-check{
+    display: flex;
+    align-items: center;
+    
+}
+.radio-content{
+    display: flex;
+    align-items: center;
+}
+.method-name{
+    margin-left: 16px;
+}
+.additional-price{
+    display: flex;
+}
+
+.add-text{
+    padding: 0 8px;
+}
+
+/* PAYMENT METHOD */
+
+.payment-method-section{
+    margin-bottom: 64px;
+}
+.payment-method-item{
+    padding: 16px;
+    position: relative;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+.payment-method-item:not(:last-child){
+    margin-bottom: 16px;
+}
+.payment-method-radio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-check{
+    margin-bottom: 32px;
+}
+.card-number-section{
+    margin-bottom: 32px;
+}
+.card-number-input{
+    width: 100%;
+}
+.card-number-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-info-holder{
+    width: 350px;
+}
+.card-info-item{
+    margin-right: 16px;
+}
+.card-info-input{
+    width: 120px;
+}
+.card-info{
+    margin-top: 32px;
     display: none;
+}
+#credit-card:checked ~ .card-info{
+    display: block;
+}
+.credit-card-name{
+    /* margin-right: 435px; */
+}
+.payment-method-img{
+    position: absolute;
+    right: 10px;
+}
+.paypal-info{
+    margin-top: 32px;
+    display: none;
+}
+#paypal-payment:checked ~ .paypal-info{
+    display: block;
+}
+.paypal-input{
+    width: 100%;
+}
+.paypal-input:not(:last-child){
+    margin-bottom: 16px;
+}
+.paypal-login-btn{
+    width: 200px;
+    padding: 10px 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--green-color);
+    font-size: 14px;
+    color: #f9f9f9;
+    border: 2px solid #46760A;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.bitcoin-info{
+    display: none;
+}
+#bitcoin-payment:checked ~ .bitcoin-info{
+    margin-top: 32px;
+    display: block;
+}
+.paypal-input{
+    width: 100%;
 }
