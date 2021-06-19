@@ -2039,13 +2039,13 @@ td{
     border-radius: 12px;
 }
 .promo-txt{
+    font-size: 14px;
+    line-height: 19px;
     background-color: #F9F9F9;
     border: none;
 }
 .promo-apply-btn{
     font-weight: bold;
-    font-size: 15px;
-    line-height: 22px;
     background-color: #F9F9F9;
     border: none;
 }
@@ -2110,4 +2110,83 @@ td{
 
 .check-footer{
     margin: 64px auto;
+}
+
+/* BLOG PAGE */
+
+/* FEATURED BLOG */
+
+.featured-blog-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.blog-list-row{
+    margin-bottom: 32px;
+    justify-content: flex-start;
+}
+.blog-card{
+    width: 269px;
+    box-sizing: border-box;
+}
+.blog-card:not(:last-child){
+    margin-right: 32px;
+}
+.blog-tag{
+    width: 15%;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--green-color);
+    background: #F4F8EC;
+    border-radius: 12px;
+}
+.blog-mini-heading{
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.blog-info{
+    display: flex;
+    align-items: center;
+}
+.blog-info-txt{
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 16px;
+}
+
+/* BLOG SIDEBAR */
+
+/* ARCHIVES */
+
+.sidebar-list{
+    list-style: none;
+}
+.sidebar-list li{
+    margin-bottom: 12px;
+}
+.sidebar-link{
+    font-size: 14px;
+    line-height: 19px;
+}
+.archive-list{
+    color: var(--green-color);
+}
+.category-list{
+    color: var(--gray-color);
+}
+.join-text{
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--gray-color);
+    margin-bottom: 24px;
+}
+.newsletter-txt{
+    width: 150px;
 }
