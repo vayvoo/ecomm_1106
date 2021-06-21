@@ -2443,8 +2443,8 @@ td{
 }
 @media (max-width: 767px){
     .blog-feature-img{
-        width: 400px;
-        height: 150px;
+        width: 98%;
+        height: 30%;
     }
     .feature-blog-info-item{
         width: auto;
@@ -2484,6 +2484,10 @@ td{
         
     }
     .billing-info-item{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .blog-card{
         margin-right: 0;
         margin-bottom: 20px;
     }
