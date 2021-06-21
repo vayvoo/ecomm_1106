@@ -2106,6 +2106,29 @@ td{
     margin-bottom: 12px;
 }
 
+@media (max-width: 1200px){
+    .billing-sidebar{
+        order: 1;
+    }
+    .checkout-main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .order-side{
+        margin-bottom: 24px;
+    }
+}
+@media (max-width: 767px){
+    .billing-sidebar{
+        width: auto;
+    }
+    .card-number-info{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+}
+
 /* FOOTER */
 
 .check-footer{
