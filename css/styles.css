@@ -2647,6 +2647,22 @@ td{
     background-color: var(--green-color);
     color: #fff;
 }
+.product-list-card:hover{
+    box-shadow: 0px 6px 23px -3px rgb(34 60 80 / 20%);
+}
+.tags-item:hover, .tags-item:focus{
+    background: var(--green-color);
+}
+.tags-item:hover .tags-link{
+    color: #fff;
+}
+.footer-items .menu-text:hover{
+    color: var(--black-color);
+}
+.show-more-btn:hover, .show-more-btn:focus{
+    background: #fff;
+    color: var(--green-color);
+}
 
 /* CUSTOM CHECKBOX */
 
