@@ -123,366 +123,393 @@
                 </div>
             </div>
             <form class="main-filter" action="POST">
-                <div class="filter-btn radio-sec">
-                    <input class="filter-radio" type="radio" name="filter-radio" id="filter-radio1" value="Filtre text">
-                    <label class="filter-lbl" for="filter-radio1">Filtre text</label>
-                    <input class="filter-radio" type="radio" name="filter-radio" id="filter-radio2" value="Filtre text" checked>
-                    <label class="filter-lbl" for="filter-radio2">Filtre text</label>
+                <div class="check-btn radio-sec">
+                    <label class="checkbox-con">One
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark radiomark"></span>
+                    </label>
+                    <label class="checkbox-con">Two
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark radiomark"></span>
+                    </label>
                 </div>
-                <div class="filter-btn checksec">
-                    <input type="checkbox" name="filter-check" id="filter-check1" value="Filtre">
-                    <label class="filter-lbl" for="filter-check1">Filtre text</label>
+                <label class="checkbox-con">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
                     <span class="check-span">Nbm</span>
-                </div>
-                <div class="filter-btn checksec">
-                    <input type="checkbox" name="filter-check" id="filter-check2" value="Filtre">
-                    <label class="filter-lbl" for="filter-check2">Filtre text</label>
+                </label>
+                <label class="checkbox-con">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
                     <span class="check-span">Nbm</span>
-                </div>
-                <div class="filter-btn checksec">
-                    <input type="checkbox" name="filter-check" id="filter-check3" value="Filtre" checked>
-                    <label class="filter-lbl" for="filter-check3">Filtre text</label>
-                    <span class="check-span">12</span>
+                </label>
+                
+                <div class="check-btn checksec">
+                    <label class="checkbox-con">Two
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="check-span">12</span>
+                    </label>
                     <select name="category" id="category" class="filter-select">
                         <option value="all">Select</option>
                         <option value="tech">technology</option>
                         <option value="fashion">Fashion</option>
                     </select>
                 </div>
-
+                
             </form>
             <div class="applied-filters">
                 <p class="applied-text">Applied filter: <span class="selected-item">Selected Filtre</span><span class="selected-item">Selected Filtre</span></p>
             </div>
-    </section>
-    <section class="products">
-        <div class="products-container container">
-            <div class="products-sidebar">
-                <div class="sidebar-sections">
-                    <h3 class="most-title side-title">Categories</h3>
-                    <div class="category-name-count">
-                        <p class="side-category-name">Category name</p><span class="category-count">320</span> 
-                    </div>
-                    <div class="category-name-count">
-                        <p class="side-category-name">Category name</p><span class="category-count">112</span> 
-                    </div>
-                    <div class="category-name-count">
-                        <p class="side-category-name">Category name</p><span class="category-count">32</span> 
-                    </div>
-                    <div class="category-name-count">
-                        <p class="side-category-name">Category name</p><span class="category-count">48</span> 
-                    </div>
-                </div>
-                <div class="sidebar-sections">
-                    <h3 class="most-title side-title">Brands</h3>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand1" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand1">Filtre by brand item</label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand2" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand2">Filtre by brand item</label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand3" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand3">Filtre by brand item</label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand4" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand4">Filtre by brand item</label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand5" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand5">Filtre by brand item</label>
-                    </div>
-                </div>
-                <div class="sidebar-sections">
-                    <h3 class="most-title side-title">Rating</h3>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating5" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating5"><img src="img/5star.svg" alt="" class="rating-star"></label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating4" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating4"><img src="img/4star.svg" alt="" class="rating-star"></label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating3" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating3"><img src="img/3star.svg" alt="" class="rating-star"></label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating2" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating2"><img src="img/2star.svg" alt="" class="rating-star"></label>
-                    </div>
-                    <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating1" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating1"><img src="img/1star.svg" alt="" class="rating-star"></label>
-                    </div>
-                </div>
-                <div class="sidebar-sections">
-                    <h3 class="most-title side-title">Rating</h3>
-                    <section class="range-slider">
-                        <span class="rangeValues"></span>
-                        <input value="10" min="0" max="100" step="10" type="range">
-                        <input value="50" min="0" max="100" step="10" type="range">
-                        
-                    </section>
-                    <div class="rangechanger">
-                        <div class="rangetext">
-                            <label for="rangemin">Min</label>
-                            <input class="minRange" type="text" name="renagemin" id="rangemin">
-                        </div>
-                        <div class="rangetext">
-                            <label for="rangemax">Max</label>
-                            <input class="minRange" type="text" name="renagemin" id="rangemax">
-                        </div>
-                    </div>
-                    <div class="range-buttons">
-                        <button class="range-btn">Apply</button>
-                        <button class="reset-btn">Reset</button>
-                    </div>
-                </div>
-            </div>
-            <div class="products-list">
-                <div class="product-list-row">
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-list-row">
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-list-row">
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="bestseller-card grid-view-card">
-                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
-                        <p class="bestseller-title">Product title</p>
-                        <p class="bestseller-desc">Space for a small product description </p>
-                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
-                        <div class="product-info">
-                            <div class="product-cost-info">
-                                <p class="product-cost">1.48 USD</span>
-                                <p class="discount-cost"></p>
-                            </div>
-                            <button class="buy-btn btn">Buy now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="product-nav">
-        <div class="product-nav-container container">
-            <div class="nav-prev">
-                <span class="page-text">Page</span>
-                <span class="page-count">1</span>
-                <span class="page-count">2</span>
-                <span class="page-count page-active">3</span>
-                <span class="page-count">4</span>
-            </div>
-            <button class="show-more-btn product-btn">Show more products</button>
-            <div class="all-products-count">
-                <span class="product-num">336</span>
-                <span class="page-text">Products</span>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-container container">
-            <div class="footer-menu">
-                <h3 class="menu-title">Get in touch</h3>
-                <ul class="footer-item"> 
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">About us</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Careers</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Press Releases</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <h3 class="menu-title">Connections</h3>
-                <ul class="footer-item">
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Facebook</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Twitter</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Instagram</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Youtube</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Linekdin</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <h3 class="menu-title">Earnings</h3>
-                <ul class="footer-item"> 
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Become an Affiliate</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Advertise your product</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Sell on Market</a></li>
-                </ul>
-            </div>
-            <div class="footer-menu">
-                <h3 class="menu-title">Account</h3>
-                <ul class="footer-item"> 
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Your account</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Returns Centre</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">100 % purchase protection</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Chat with us</a></li>
-                    <li class="footer-items"><a href="#" class="menu-text top-header-link links">Help</a></li>
-                </ul>
-            </div>
-        </div>
-        <section class="tags container">
-            <h3 class="section-title">Product tags</h3>
-            <ul class="tags-list">
-                <ul class="tags-item"><a href="#" class="tags-link links">Beans</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Carrots</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Apples</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Garlic</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Mushrooms</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Tomatoes</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Chilli peppers</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Brocolli</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Watermelons</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Oranges</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Bananas</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Grapes</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Cherries</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Meat</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Fish</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Fresh food</a></ul>
-                <ul class="tags-item"><a href="#" class="tags-link links">Lemons</a></ul>
-            </ul>
-            <p class="copyright">Copyright © 2020 petrbilek.com</p>
         </section>
-    </footer>
-    <script>
-        function getVals(){
-  // Get slider values
-  var parent = this.parentNode;
-  var slides = parent.getElementsByTagName("input");
-    var slide1 = parseFloat( slides[0].value );
-    var slide2 = parseFloat( slides[1].value );
-  // Neither slider will clip the other, so make sure we determine which is larger
-  if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
-  
-  document.getElementById('rangemin').value=slide1;
-  document.getElementById('rangemax').value=slide2;
-}
-
-window.onload = function(){
-  // Initialize Sliders
-  var sliderSections = document.getElementsByClassName("range-slider");
-      for( var x = 0; x < sliderSections.length; x++ ){
-        var sliders = sliderSections[x].getElementsByTagName("input");
-        for( var y = 0; y < sliders.length; y++ ){
-          if( sliders[y].type ==="range" ){
-            sliders[y].oninput = getVals;
-            // Manually trigger event first time to display values
-            sliders[y].oninput();
-          }
-        }
-      }
-}
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</body>
-</html>
+        <section class="products">
+            <div class="products-container container">
+                <div class="products-sidebar">
+                    <div class="sidebar-sections">
+                        <h3 class="most-title side-title">Categories</h3>
+                        <div class="category-name-count">
+                            <p class="side-category-name">Category name</p><span class="category-count">320</span> 
+                        </div>
+                        <div class="category-name-count">
+                            <p class="side-category-name">Category name</p><span class="category-count">112</span> 
+                        </div>
+                        <div class="category-name-count">
+                            <p class="side-category-name">Category name</p><span class="category-count">32</span> 
+                        </div>
+                        <div class="category-name-count">
+                            <p class="side-category-name">Category name</p><span class="category-count">48</span> 
+                        </div>
+                    </div>
+                    <div class="sidebar-sections">
+                        <h3 class="most-title side-title">Brands</h3>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check">Filter by brand item
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check">Filter by brand item
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check">Filter by brand item
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check">Filter by brand item
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check">Filter by brand item
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="sidebar-sections">
+                        <h3 class="most-title side-title">Rating</h3>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check"><img src="img/5star.svg" alt="" class="rating-star">
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check"><img src="img/4star.svg" alt="" class="rating-star">
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check"><img src="img/3star.svg" alt="" class="rating-star">
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check"><img src="img/2star.svg" alt="" class="rating-star">
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="sidecheck">
+                            <label class="checkbox-con sidebar-check"><img src="img/1star.svg" alt="" class="rating-star">
+                                <input type="checkbox">
+                                <span class="checkmark side-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="sidebar-sections">
+                        <h3 class="most-title side-title">Rating</h3>
+                        <section class="range-slider">
+                            <span class="rangeValues"></span>
+                            <input value="10" min="0" max="100" step="10" type="range">
+                            <input value="50" min="0" max="100" step="10" type="range">
+                            
+                        </section>
+                        <div class="rangechanger">
+                            <div class="rangetext">
+                                <label for="rangemin">Min</label>
+                                <input class="minRange" type="text" name="renagemin" id="rangemin">
+                            </div>
+                            <div class="rangetext">
+                                <label for="rangemax">Max</label>
+                                <input class="minRange" type="text" name="renagemin" id="rangemax">
+                            </div>
+                        </div>
+                        <div class="range-buttons">
+                            <button class="range-btn">Apply</button>
+                            <button class="reset-btn">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list">
+                    <div class="product-list-row">
+                        <div class="bestseller-card grid-view-card">
+                            <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                            <p class="bestseller-title">Product title</p>
+                            <p class="bestseller-desc">Space for a small product description </p>
+                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                            <div class="product-info">
+                                <div class="product-cost-info">
+                                    <p class="product-cost">1.48 USD</span>
+                                        <p class="discount-cost"></p>
+                                    </div>
+                                    <button class="buy-btn btn">Buy now</button>
+                                </div>
+                            </div>
+                            <div class="bestseller-card grid-view-card">
+                                <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                <p class="bestseller-title">Product title</p>
+                                <p class="bestseller-desc">Space for a small product description </p>
+                                <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                <div class="product-info">
+                                    <div class="product-cost-info">
+                                        <p class="product-cost">1.48 USD</span>
+                                            <p class="discount-cost"></p>
+                                        </div>
+                                        <button class="buy-btn btn">Buy now</button>
+                                    </div>
+                                </div>
+                                <div class="bestseller-card grid-view-card">
+                                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                    <p class="bestseller-title">Product title</p>
+                                    <p class="bestseller-desc">Space for a small product description </p>
+                                    <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                    <div class="product-info">
+                                        <div class="product-cost-info">
+                                            <p class="product-cost">1.48 USD</span>
+                                                <p class="discount-cost"></p>
+                                            </div>
+                                            <button class="buy-btn btn">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-list-row">
+                                    <div class="bestseller-card grid-view-card">
+                                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                        <p class="bestseller-title">Product title</p>
+                                        <p class="bestseller-desc">Space for a small product description </p>
+                                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                        <div class="product-info">
+                                            <div class="product-cost-info">
+                                                <p class="product-cost">1.48 USD</span>
+                                                    <p class="discount-cost"></p>
+                                                </div>
+                                                <button class="buy-btn btn">Buy now</button>
+                                            </div>
+                                        </div>
+                                        <div class="bestseller-card grid-view-card">
+                                            <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                            <p class="bestseller-title">Product title</p>
+                                            <p class="bestseller-desc">Space for a small product description </p>
+                                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                            <div class="product-info">
+                                                <div class="product-cost-info">
+                                                    <p class="product-cost">1.48 USD</span>
+                                                        <p class="discount-cost"></p>
+                                                    </div>
+                                                    <button class="buy-btn btn">Buy now</button>
+                                                </div>
+                                            </div>
+                                            <div class="bestseller-card grid-view-card">
+                                                <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                                <p class="bestseller-title">Product title</p>
+                                                <p class="bestseller-desc">Space for a small product description </p>
+                                                <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                                <div class="product-info">
+                                                    <div class="product-cost-info">
+                                                        <p class="product-cost">1.48 USD</span>
+                                                            <p class="discount-cost"></p>
+                                                        </div>
+                                                        <button class="buy-btn btn">Buy now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-list-row">
+                                                <div class="bestseller-card grid-view-card">
+                                                    <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                                    <p class="bestseller-title">Product title</p>
+                                                    <p class="bestseller-desc">Space for a small product description </p>
+                                                    <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                                    <div class="product-info">
+                                                        <div class="product-cost-info">
+                                                            <p class="product-cost">1.48 USD</span>
+                                                                <p class="discount-cost"></p>
+                                                            </div>
+                                                            <button class="buy-btn btn">Buy now</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bestseller-card grid-view-card">
+                                                        <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                                        <p class="bestseller-title">Product title</p>
+                                                        <p class="bestseller-desc">Space for a small product description </p>
+                                                        <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                                        <div class="product-info">
+                                                            <div class="product-cost-info">
+                                                                <p class="product-cost">1.48 USD</span>
+                                                                    <p class="discount-cost"></p>
+                                                                </div>
+                                                                <button class="buy-btn btn">Buy now</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bestseller-card grid-view-card">
+                                                            <img src="img/best-selling-bg.png" alt="" class="bestseller-card-img" width="236" height="180">
+                                                            <p class="bestseller-title">Product title</p>
+                                                            <p class="bestseller-desc">Space for a small product description </p>
+                                                            <img src="/img/product-rating.svg" alt="product rating" class="product-rating-img">
+                                                            <div class="product-info">
+                                                                <div class="product-cost-info">
+                                                                    <p class="product-cost">1.48 USD</span>
+                                                                        <p class="discount-cost"></p>
+                                                                    </div>
+                                                                    <button class="buy-btn btn">Buy now</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section class="product-nav">
+                                                <div class="product-nav-container container">
+                                                    <div class="nav-prev">
+                                                        <span class="page-text">Page</span>
+                                                        <span class="page-count">1</span>
+                                                        <span class="page-count">2</span>
+                                                        <span class="page-count page-active">3</span>
+                                                        <span class="page-count">4</span>
+                                                    </div>
+                                                    <button class="show-more-btn product-btn">Show more products</button>
+                                                    <div class="all-products-count">
+                                                        <span class="product-num">336</span>
+                                                        <span class="page-text">Products</span>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </main>
+                                        
+                                        <footer class="site-footer">
+                                            <div class="footer-container container">
+                                                <div class="footer-menu">
+                                                    <h3 class="menu-title">Get in touch</h3>
+                                                    <ul class="footer-item"> 
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">About us</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Careers</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Press Releases</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Blog</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="footer-menu">
+                                                    <h3 class="menu-title">Connections</h3>
+                                                    <ul class="footer-item">
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Facebook</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Twitter</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Instagram</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Youtube</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Linekdin</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="footer-menu">
+                                                    <h3 class="menu-title">Earnings</h3>
+                                                    <ul class="footer-item"> 
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Become an Affiliate</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Advertise your product</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Sell on Market</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="footer-menu">
+                                                    <h3 class="menu-title">Account</h3>
+                                                    <ul class="footer-item"> 
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Your account</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Returns Centre</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">100 % purchase protection</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Chat with us</a></li>
+                                                        <li class="footer-items"><a href="#" class="menu-text top-header-link links">Help</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <section class="tags container">
+                                                <h3 class="section-title">Product tags</h3>
+                                                <ul class="tags-list">
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Beans</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Carrots</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Apples</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Garlic</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Mushrooms</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Tomatoes</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Chilli peppers</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Brocolli</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Watermelons</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Oranges</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Bananas</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Grapes</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Cherries</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Meat</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Fish</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Seo tag</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Fresh food</a></ul>
+                                                    <ul class="tags-item"><a href="#" class="tags-link links">Lemons</a></ul>
+                                                </ul>
+                                                <p class="copyright">Copyright © 2020 petrbilek.com</p>
+                                            </section>
+                                        </footer>
+                                        <script>
+                                            function getVals(){
+                                                // Get slider values
+                                                var parent = this.parentNode;
+                                                var slides = parent.getElementsByTagName("input");
+                                                var slide1 = parseFloat( slides[0].value );
+                                                var slide2 = parseFloat( slides[1].value );
+                                                // Neither slider will clip the other, so make sure we determine which is larger
+                                                if( slide1 > slide2 ){ var tmp = slide2; slide2 = slide1; slide1 = tmp; }
+                                                
+                                                document.getElementById('rangemin').value=slide1;
+                                                document.getElementById('rangemax').value=slide2;
+                                            }
+                                            
+                                            window.onload = function(){
+                                                // Initialize Sliders
+                                                var sliderSections = document.getElementsByClassName("range-slider");
+                                                for( var x = 0; x < sliderSections.length; x++ ){
+                                                    var sliders = sliderSections[x].getElementsByTagName("input");
+                                                    for( var y = 0; y < sliders.length; y++ ){
+                                                        if( sliders[y].type ==="range" ){
+                                                            sliders[y].oninput = getVals;
+                                                            // Manually trigger event first time to display values
+                                                            sliders[y].oninput();
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        </script>
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                    </body>
+                                    </html>

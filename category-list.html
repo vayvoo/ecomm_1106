@@ -123,33 +123,40 @@
                 </div>
             </div>
             <form class="main-filter" action="POST">
-                <div class="filter-btn radio-sec">
-                    <input class="filter-radio" type="radio" name="filter-radio" id="filter-radio1" value="Filtre text">
-                    <label class="filter-lbl" for="filter-radio1">Filtre text</label>
-                    <input class="filter-radio" type="radio" name="filter-radio" id="filter-radio2" value="Filtre text" checked>
-                    <label class="filter-lbl" for="filter-radio2">Filtre text</label>
+                <div class="check-btn radio-sec">
+                    <label class="checkbox-con">One
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark radiomark"></span>
+                    </label>
+                    <label class="checkbox-con">Two
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark radiomark"></span>
+                    </label>
                 </div>
-                <div class="filter-btn checksec">
-                    <input type="checkbox" name="filter-check" id="filter-check1" value="Filtre">
-                    <label class="filter-lbl" for="filter-check1">Filtre text</label>
+                <label class="checkbox-con">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
                     <span class="check-span">Nbm</span>
-                </div>
-                <div class="filter-btn checksec">
-                    <input type="checkbox" name="filter-check" id="filter-check2" value="Filtre">
-                    <label class="filter-lbl" for="filter-check2">Filtre text</label>
+                </label>
+                <label class="checkbox-con">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
                     <span class="check-span">Nbm</span>
-                </div>
-                <div class="filter-btn checksec">
-                    <input type="checkbox" name="filter-check" id="filter-check3" value="Filtre" checked>
-                    <label class="filter-lbl" for="filter-check3">Filtre text</label>
-                    <span class="check-span">12</span>
+                </label>
+                
+                <div class="check-btn checksec">
+                    <label class="checkbox-con">Two
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="check-span">12</span>
+                    </label>
                     <select name="category" id="category" class="filter-select">
                         <option value="all">Select</option>
                         <option value="tech">technology</option>
                         <option value="fashion">Fashion</option>
                     </select>
                 </div>
-
+                
             </form>
             <div class="applied-filters">
                 <p class="applied-text">Applied filter: <span class="selected-item">Selected Filtre</span><span class="selected-item">Selected Filtre</span></p>
@@ -176,47 +183,67 @@
                 <div class="sidebar-sections">
                     <h3 class="most-title side-title">Brands</h3>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand1" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand1">Filtre by brand item</label>
+                        <label class="checkbox-con sidebar-check">Filter by brand item
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand2" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand2">Filtre by brand item</label>
+                        <label class="checkbox-con sidebar-check">Filter by brand item
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand3" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand3">Filtre by brand item</label>
+                        <label class="checkbox-con sidebar-check">Filter by brand item
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand4" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand4">Filtre by brand item</label>
+                        <label class="checkbox-con sidebar-check">Filter by brand item
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-brand5" value="Filtre">
-                        <label class="filter-lbl" for="filter-brand5">Filtre by brand item</label>
+                        <label class="checkbox-con sidebar-check">Filter by brand item
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                 </div>
                 <div class="sidebar-sections">
                     <h3 class="most-title side-title">Rating</h3>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating5" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating5"><img src="img/5star.svg" alt="" class="rating-star"></label>
+                        <label class="checkbox-con sidebar-check"><img src="img/5star.svg" alt="" class="rating-star">
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating4" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating4"><img src="img/4star.svg" alt="" class="rating-star"></label>
+                        <label class="checkbox-con sidebar-check"><img src="img/4star.svg" alt="" class="rating-star">
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating3" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating3"><img src="img/3star.svg" alt="" class="rating-star"></label>
+                        <label class="checkbox-con sidebar-check"><img src="img/3star.svg" alt="" class="rating-star">
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating2" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating2"><img src="img/2star.svg" alt="" class="rating-star"></label>
+                        <label class="checkbox-con sidebar-check"><img src="img/2star.svg" alt="" class="rating-star">
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                     <div class="sidecheck">
-                        <input type="checkbox" name="filter-check" id="filter-rating1" value="Filtre">
-                        <label class="filter-lbl" for="filter-rating1"><img src="img/1star.svg" alt="" class="rating-star"></label>
+                        <label class="checkbox-con sidebar-check"><img src="img/1star.svg" alt="" class="rating-star">
+                            <input type="checkbox">
+                            <span class="checkmark side-checkmark"></span>
+                        </label>
                     </div>
                 </div>
                 <div class="sidebar-sections">
