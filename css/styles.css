@@ -74,6 +74,7 @@ body{
 }
 .links{
     text-decoration: none;
+    color: var(--black-color);
 }
 .visually-hidden{
     position: absolute;
@@ -108,7 +109,6 @@ body{
     margin: 0;
 }
 .top-header-text{
-    font-weight: bold;
     font-size: 12px;
     line-height: 16px;
 }
@@ -137,6 +137,7 @@ body{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .category-select{
+    font-weight: bold;
     background-color: #F9F9F9;
     border: none;
     margin-right: 20px;
@@ -250,14 +251,6 @@ body{
     .main-header{
         padding: 10px 0;
     }
-    /* .top-header-items{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .top-header-text:not(:last-child) {
-        margin: 0;
-        margin-bottom: 10px;
-    } */
     .header-navbar{
         justify-content: center;
     }
@@ -358,7 +351,6 @@ body{
     margin-bottom: 12px;
 }
 .cat-menu-text {
-    font-weight: bold;
     font-size: 14px;
     line-height: 19px;
     color: var(--green-color);
@@ -368,6 +360,8 @@ body{
     padding: 12.5px 38px 12.5px 16px; 
     background: #F5F5F5;
     border-radius: 12px;
+    font-weight: bold;
+    border: none;
 }
 .banner-card {
     background: url("../img/vegs-banner.png") #F4F8EC;
@@ -388,6 +382,7 @@ body{
 }
 .banner-title {
     margin: 0;
+    font-weight: bold;
     font-size: 22px;
     line-height: 33px;
     color: var(--black-color);
@@ -398,6 +393,7 @@ body{
     border: 2px solid #92C064;
     box-sizing: border-box;
     border-radius: 12px;
+    font-weight: bold;
 }
 
 /* BESTSELLER SECTION */
@@ -490,10 +486,12 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
 .product-cost{
     margin: 0;
     font-size: 18px;
     line-height: 27px;
+    font-weight: bold;
     color: #151515;
 }
 .discount-cost{
@@ -501,6 +499,7 @@ body{
     font-size: 12px;
     line-height: 18px;
     text-decoration-line: line-through;
+    font-weight: bold;
     color: #A9A9A9;
 }
 .buy-btn{
@@ -511,7 +510,11 @@ body{
     box-sizing: border-box;
     border-radius: 12px;
 }
-
+@media (max-width: 767px){
+    .product-cost-info{
+        text-align: center;
+    }
+}
 /* FARMERS SECTION */
 
 .farmers{
@@ -532,9 +535,11 @@ body{
     color: var(--black-color);
 }
 .section-btn{
+    font-weight: bold;
     padding: 6px 12px;
     background: none;
     border: none;
+    cursor: pointer;
 }
 @media (max-width: 992px){
     .testimonials{
@@ -660,19 +665,22 @@ body{
     line-height: 33px;
     color: #FFFFFF;
 }
-.blog-author-img{
+.home-fuature-blog-info{
+    display: flex;
+    align-items: center;
     position: absolute;
     left: 24px;
     bottom: 24px;
 }
+.blog-author-img{
+    margin-right: 8px;
+}
 .blog-author-name {
-    position: absolute;
-    left: 64px;
-    bottom: 20px;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
     color: #f9f9f9;
+    margin-right: 16px;
 }
 @media (max-width: 1200px){
     .blog-content{
@@ -694,9 +702,6 @@ body{
 }
 
 .blog-date {
-    position: absolute;
-    left: 123px;
-    bottom: 20px;
     font-size: 12px;
     line-height: 16px;
     color: #f9f9f9;
@@ -725,6 +730,7 @@ body{
     font-size: 18px;
     line-height: 27px;
     color: var(--black-color);
+    font-weight: bold;
     margin-bottom: 16px;
 }
 .full-blog-author-name{
@@ -742,6 +748,7 @@ body{
     margin-right: 48px;
 }
 .posts-title{
+    margin-bottom: 16px;
     font-weight: bold;
     font-size: 15px;
     line-height: 22px;
@@ -846,7 +853,6 @@ body{
     color: var(--black-color);
 }
 .copyright{
-    font-weight: bold;
     font-size: 14px;
     line-height: 19px;
     color: var(--black-color);
@@ -981,6 +987,8 @@ body{
     border: none;
     border-left: 1px solid #D1D1D1;
     background-color: #F9F9F9;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
 }
 .applied-text{
     font-weight: 600;
@@ -2370,7 +2378,7 @@ td{
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
-    color: var(--green-color);
+    color: var(--black-color);
 }
 .back-link{
     display: block;
@@ -2600,7 +2608,6 @@ td{
     display: flex;
     align-items: center;
     position: relative;
-    border: none;
 }
 .btn::after{
     content: "";
@@ -2631,7 +2638,10 @@ td{
 .banner-card:hover, .banner-card:focus{
     background-color: var(--green-color);
 }
-.banner-card:hover > .banner-title, .supheading{
+.banner-card:hover > .banner-title{
+    color: #fff;
+}
+.banner-card:hover > .supheading{
     color: #fff;
 }
 .read-btn:hover, .read-btn:focus{
@@ -2703,13 +2713,13 @@ td{
     left: 10%;
     height: 24px;
     width: 24px;
-    box-shadow: 0px -1px 0px 2px rgba(34, 60, 80, 0.2) inset;
+    border: 1.5px solid #D1D1D1;
     background-color: #fff;
   }
   
   /* On mouse-over, add a grey background color */
   .checkbox-con:hover input ~ .checkmark {
-    box-shadow: 0px -1px 0px 2px rgba(42, 71, 19, 0.2) inset;
+    border: 1.5px solid var(--green-color);
   }
   
   /* When the checkbox is checked, add a blue background */
@@ -2731,8 +2741,8 @@ td{
   
   /* Style the checkmark/indicator */
   .checkbox-con .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 8px;
+    top: 4px;
     width: 5px;
     height: 10px;
     border: solid white;
@@ -2756,8 +2766,8 @@ td{
   }
   .checkbox-con .radiomark:after {
     border-radius: 50%;
-    top: 6px;
-	left: 6px;
+    top: 5px;
+	left: 5px;
     width: 12px;
     height: 12px;
     border: none;
