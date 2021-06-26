@@ -171,6 +171,7 @@
                     </div>
                     <input class="another-address-check" type="checkbox" name="another-address" id="another-address">
                     <label class="different-address-check" for="another-address">Ship to a different address</label>
+
                     <div class="different-address-section">
                         <div class="billing-info-row">
                             <div class="billing-info-item">
@@ -228,7 +229,7 @@
                         <div class="billing-method">
                             <div class="billing-method-item">
                                 <div class="radio-check">
-                                    <input type="radio" name="billing-method" id="fedex">
+                                    <input type="radio" name="billing-method" id="fedex" class="check-radio">
                                     <label class="method-name" for="fedex">FedEx</label>
                                 </div>
                                 <div class="additional-price">
@@ -239,7 +240,7 @@
                             </div>
                             <div class="billing-method-item">
                                 <div class="radio-check">
-                                    <input type="radio" name="billing-method" id="dhl">
+                                    <input type="radio" name="billing-method" id="dhl" class="check-radio">
                                     <label class="method-name" for="dhl">DHL</label>
                                 </div>
                                 <div class="additional-price">
@@ -260,7 +261,7 @@
                         </div>
                         <div class="payment-method">
                             <div class="payment-method-item">
-                                <input type="radio" name="payment" id="credit-card">
+                                <input type="radio" name="payment" id="credit-card" class="check-radio">
                                 <label class="method-name credit-card-name" for="credit-card">Credit card</label>
                                 <img src="img/visa-icon.png" alt="" class="payment-method-img" width="94" height="20">
                                 <div class="card-info">
@@ -285,7 +286,7 @@
                                 </div>
                             </div>
                             <div class="payment-method-item">
-                                <input type="radio" name="payment" id="paypal-payment">
+                                <input type="radio" name="payment" id="paypal-payment" class="check-radio">
                                 <label class="method-name paypal-payment-name" for="paypal-payment">Paypal</label>
                                 <img src="img/paypal-icon.png" alt="" class="payment-method-img" width="78" height="18">
                                 <div class="paypal-info">
@@ -299,7 +300,7 @@
                                 </div>
                             </div>
                             <div class="payment-method-item">
-                                <input type="radio" name="payment" id="bitcoin-payment">
+                                <input type="radio" name="payment" id="bitcoin-payment" class="check-radio">
                                 <label class="method-name paypal-payment-name" for="bitcoin-payment">Bitcoin</label>
                                 <img src="img/bitcoin-icon.png" alt="" class="payment-method-img" width="75" height="16">
                                 <div class="bitcoin-info">
@@ -335,12 +336,12 @@
                         </div>
                         <div class="confirmation">
                             <div class="rule-checkbox">
-                                <input type="checkbox" name="newsletter-msg" id="newsletter-msg">
-                                <label class="rule-check-lbl" for="newsletter-msg">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+                                <input type="checkbox" name="newsletter-msg" id="newsletter-msg" class="another-address-check rule-check">
+                                <label for="newsletter-msg">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
                             </div>
                             <div class="rule-checkbox">
-                                <input type="checkbox" name="terms-msg" id="terms-msg">
-                                <label class="rule-check-lbl" for="terms-msg">I agree with our terms and conditions and privacy policy.</label>
+                                <input type="checkbox" name="terms-msg" id="terms-msg" class="another-address-check rule-check">
+                                <label for="terms-msg">I agree with our terms and conditions and privacy policy.</label>
                             </div>
                             <button class="complete-btn">Complete order</button>
                             <div class="security-section">
