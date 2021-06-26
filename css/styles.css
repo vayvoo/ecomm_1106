@@ -58,7 +58,6 @@ html{
     box-sizing: inherit;
 }
 body{
-    /* background-color: var(--gray-color); */
     font-family: "Poppins", "Arial", sans-serif;
     font-size: 15px;
     line-height: 22px;
@@ -73,6 +72,10 @@ body{
     margin-right: auto;
 }
 .links{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.btn-links{
     text-decoration: none;
     color: var(--black-color);
 }
@@ -131,7 +134,7 @@ body{
     display: flex;
     align-items: center;
     background-color: #F9F9F9;
-    border: 1px solid #F9F9F9;
+    
     box-sizing: border-box;
     border-radius: 12px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1564,7 +1567,6 @@ section.range-slider input[type=range]::-moz-focus-outer {
     font-size: 14px;
     line-height: 19px;
     border: none;
-    outline: ;
     background-color: #F9F9F9;
     width: 15px;
 }
@@ -2354,9 +2356,9 @@ td{
 /* FULL BLOG */
 
 .full-blog{
-    /* width: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-between; */
+    justify-content: space-between; 
     padding-top: 48px;
     padding-bottom: 48px;
 }
@@ -2693,21 +2695,21 @@ td{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  .check-btn .checkbox-con{
-      margin-right: 16px;
-      padding-right: 0;
-      border: none;
-  }
-  /* Hide the browser's default checkbox */
-  .checkbox-con input {
+}
+.check-btn .checkbox-con{
+    margin-right: 16px;
+    padding-right: 0;
+    border: none;
+}
+/* Hide the browser's default checkbox */
+.checkbox-con input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -2715,32 +2717,32 @@ td{
     width: 24px;
     border: 1.5px solid #D1D1D1;
     background-color: #fff;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .checkbox-con:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-con:hover input ~ .checkmark {
     border: 1.5px solid var(--green-color);
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkbox-con input:checked ~ .checkmark {
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-con input:checked ~ .checkmark {
     background-color: var(--green-color);
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkbox-con input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.checkbox-con input:checked ~ .checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkbox-con .checkmark:after {
+}
+
+/* Style the checkmark/indicator */
+.checkbox-con .checkmark:after {
     left: 8px;
     top: 4px;
     width: 5px;
@@ -2750,8 +2752,8 @@ td{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-  .check-btn {
+}
+.check-btn {
     display: flex;
     margin-right: 16px;
     background: #F9F9F9;
@@ -2760,30 +2762,30 @@ td{
     padding-right: 0;
     box-sizing: border-box;
     border-radius: 12px;
-  }
-  .radiomark{
-      border-radius: 50%;
-  }
-  .checkbox-con .radiomark:after {
+}
+.radiomark{
+    border-radius: 50%;
+}
+.checkbox-con .radiomark:after {
     border-radius: 50%;
     top: 5px;
-	left: 5px;
+    left: 5px;
     width: 12px;
     height: 12px;
     border: none;
     background: white;
-  }
-  .checkbox-con input:checked ~ .radiomark {
+}
+.checkbox-con input:checked ~ .radiomark {
     background-color: var(--black-color);
-  }
+}
 
 /* SIDEBAR CHECKMARK */
 
-  .sidebar-check{
-      padding-left: 30px;
-      border: none;
-      background: none;
-  }
-  .side-checkmark{
+.sidebar-check{
+    padding-left: 30px;
+    border: none;
+    background: none;
+}
+.side-checkmark{
     left: 0;
-  }
+}
